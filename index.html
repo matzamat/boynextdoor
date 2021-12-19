@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+          crossorigin="anonymous"
+    >
+    <title>Журнал</title>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">Электронный журнал</a>
+        <form class="d-flex">
+            <input type="email"
+                   placeholder="Логин"
+                   aria-label="Search"
+                   class="form-control me-2"
+            >
+            <input type="password"
+                   placeholder="Пароль"
+                   aria-label="Search"
+                   class="form-control me-2"
+            >
+            <button
+                    type="reset"
+                    class="btn btn-outline-light"
+            >
+                вход
+            </button>
+        </form>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1 class="pt-3 pb-3">Занятия</h1>
+
+    <!-- Modal1 -->
+    <div id="exampleModal"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         class="modal fade"
+         style="display: none;" aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Администрирование в ИС</h5>
+                    <button type="button"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            class="btn-close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="row">
+                            <div class="card mb-3 col-sm-12 col-md-6 col-lg-4">
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">11.11.2021</h5>
+                                            <button type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal"
+                                                    class="btn btn-secondary btn-sm"
+                                            >
+                                                Просмотр
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">25.10.2021</h5>
+                                            <button type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal"
+                                                    class="btn btn-secondary btn-sm"
+                                            >
+                                                Просмотр
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">14.09.2021</h5>
+                                            <button type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal"
+                                                    class="btn btn-secondary btn-sm"
+                                            >
+                                                Просмотр
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button"
+                                data-bs-dismiss="modal"
+                                class="btn btn-secondary  btn-sm"
+                        >
+                            Закрыть
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div id="exampleModal2"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         class="modal fade"
+         style="display: none;" aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Методы и средства проектирования</h5>
+                    <button type="button"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            class="btn-close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="row">
+                            <div class="card mb-3 col-sm-12 col-md-6 col-lg-4">
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">24.11.2021</h5>
+                                            <button type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal2"
+                                                    class="btn btn-secondary btn-sm"
+                                            >
+                                                Просмотр
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">29.10.2021</h5>
+                                            <button type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal2"
+                                                    class="btn btn-secondary btn-sm"
+                                            >
+                                                Просмотр
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">01.10.2021</h5>
+                                            <button type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal2"
+                                                    class="btn btn-secondary btn-sm"
+                                            >
+                                                Просмотр
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button"
+                                data-bs-dismiss="modal"
+                                class="btn btn-secondary  btn-sm"
+                        >
+                            Закрыть
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Modal3 -->
+    <div id="exampleModal3"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         class="modal fade"
+         style="display: none;" aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Добавить</h5>
+                    <button type="button"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            class="btn-close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <H5>Аудитория</H5>
+                       <input
+                       >
+                       <H5>Группа</H5>
+                       <select>
+                           <option>ЛБб-Эк-19-1</option>
+                           <option>ЛПб-ЛД-18-3</option>
+                           <option>ЛПб-ИСиТ-18-2</option>
+                           <option>ЛПб-ЭКПР-19-1</option>
+                       </select>
+                       <table class="table table-striped table-sm">
+                           <thead>
+                               <tr>
+                                   <th scope="col">Имя</th>
+                                   <th scope="col">Оценка</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <td>Винокурова Ольга Максимовна</td>
+                                   <td><input></td>
+                               </tr>
+                               <tr>
+                                <td>Петровская Амина Викторовна</td>
+                                <td><input></td>
+                            </tr>
+                            <tr>
+                                <td>Морозов Александр Савельевич</td>
+                                <td><input></td>
+                            </tr>
+                            <tr>
+                                <td>Никитина Евангелина Алексеевна</td>
+                                <td><input></td>
+                            </tr>
+                            <tr>
+                                <td>Селиванов Антон Даниилович</td>
+                                <td><input></td>
+                            </tr>
+                           </tbody>
+                       </table>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button"
+                                data-bs-dismiss="modal"
+                                class="btn btn-secondary  btn-sm"
+                        >
+                            Закрыть
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card mb-3 col-sm-12 col-md-6 col-lg-4">
+            <div class="row g-0">
+                <div class="col-4">
+                    <img src="https://cdn.pixabay.com/photo/2016/12/21/17/11/signe-1923369_960_720.png"
+                         alt="Добавить"
+                         style="max-width: 100%;"
+                    >
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Новое занятие</h5>
+                        <button type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal3"
+                                class="btn btn-secondary btn-sm"
+                        >
+                            Добавить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card mb-3 col-sm-12 col-md-6 col-lg-4">
+            <div class="row g-0">
+                <div class="col-4">
+                    <img src="https://ricudm.ru/wp-content/uploads/2019/09/project_41.png"
+                         alt="Администрирование в ИС"
+                         style="max-width: 100%;"
+                    >
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Администрирование в ИС</h5>
+                        <button type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                class="btn btn-secondary btn-sm"
+                        >
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card mb-3 col-sm-12 col-md-6 col-lg-4">
+            <div class="row g-0">
+                <div class="col-4">
+                    <img src="http://www.itshop.ru/productimages/auto/pimg_2018428_909.jpg"
+                         alt="Методы и средства проектирования"
+                         style="max-width: 100%;"
+                    >
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Методы и средства проектирования</h5>
+                        <button type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2"
+                                class="btn btn-secondary btn-sm"
+                        >
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"
+></script>
+
+</body>
+</html>
