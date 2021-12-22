@@ -18,34 +18,87 @@
        </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Электронный журнал</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/starosta.html">Связь со старостой</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="Логин" aria-label="Search">
+              <input class="form-control me-2" type="password" placeholder="Пароль" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Войти</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="b-example-divider" style="height: 30px;"></div>
+      <div class="container px-6 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">Занятия</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            
+                <img src="https://cdn.pixabay.com/photo/2016/12/21/17/11/signe-1923369_960_720.png"
+                         alt="Добавить"
+                         style="max-width: 100px;"
+                    >
+              
+            <div>
+              <h5>Новое занятие</h5>
+              <button type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#с"
+                                class="btn btn-primary"
+                        >
+                            Добавить
+                        </button>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
 
-<nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand">Электронный журнал</a>
-        <form class="d-flex">
-            <input type="email"
-                   placeholder="Логин"
-                   aria-label="Search"
-                   class="form-control me-2"
-            >
-            <input type="password"
-                   placeholder="Пароль"
-                   aria-label="Search"
-                   class="form-control me-2"
-            >
-            <button
-                    type="reset"
-                    class="btn btn-outline-light"
-            >
-                вход
-            </button>
-        </form>
-    </div>
-</nav>
+                <img src="https://ricudm.ru/wp-content/uploads/2019/09/project_41.png"
+                         alt="Администрирование в ИС"
+                         style="max-width: 100px;"
+                    >
 
-<div class="container">
-
-    <h1 class="pt-3 pb-3">Занятия</h1>
+            <div>
+              <h5>Администрирование в ИС</h5>
+              <button type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                class="btn btn-primary"
+                        >
+                            Подробнее
+                        </button>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img src="http://www.itshop.ru/productimages/auto/pimg_2018428_909.jpg"
+                         alt="Методы и средства проектирования"
+                         style="max-width: 100px;"
+                    >
+            <div>
+              <h5>Методы и средства проектирования</h5>
+              <button type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2"
+                                class="btn btn-primary"
+                        >
+                            Подробнее
+                        </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Modal1 -->
     <div id="exampleModal"
@@ -282,80 +335,6 @@
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="card mb-3 col-sm-12 col-md-6 col-lg-4">
-            <div class="row g-0">
-                <div class="col-4">
-                    <img src="https://cdn.pixabay.com/photo/2016/12/21/17/11/signe-1923369_960_720.png"
-                         alt="Добавить"
-                         style="max-width: 100%;"
-                    >
-                </div>
-                <div class="col-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Новое занятие</h5>
-                        <button type="button"
-                                data-bs-toggle="modal"
-                                data-bs-target="#exampleModal3"
-                                class="btn btn-secondary btn-sm"
-                        >
-                            Добавить
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="card mb-3 col-sm-12 col-md-6 col-lg-4">
-            <div class="row g-0">
-                <div class="col-4">
-                    <img src="https://ricudm.ru/wp-content/uploads/2019/09/project_41.png"
-                         alt="Администрирование в ИС"
-                         style="max-width: 100%;"
-                    >
-                </div>
-                <div class="col-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Администрирование в ИС</h5>
-                        <button type="button"
-                                data-bs-toggle="modal"
-                                data-bs-target="#exampleModal"
-                                class="btn btn-secondary btn-sm"
-                        >
-                            Подробнее
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="card mb-3 col-sm-12 col-md-6 col-lg-4">
-            <div class="row g-0">
-                <div class="col-4">
-                    <img src="http://www.itshop.ru/productimages/auto/pimg_2018428_909.jpg"
-                         alt="Методы и средства проектирования"
-                         style="max-width: 100%;"
-                    >
-                </div>
-                <div class="col-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Методы и средства проектирования</h5>
-                        <button type="button"
-                                data-bs-toggle="modal"
-                                data-bs-target="#exampleModal2"
-                                class="btn btn-secondary btn-sm"
-                        >
-                            Подробнее
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
